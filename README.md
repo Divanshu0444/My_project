@@ -38,19 +38,19 @@ The dataset is prepared as structured arrays and used for supervised binary clas
 
 Two multivariate classifiers are implemented:
 
-### Boosted Decision Trees (BDT)
-Implemented using scikit-learn / TMVA-style workflows.
-
 ### XGBoost
 Gradient boosted decision trees optimized for performance and scalability.
 
-The training pipeline includes:
+- Feature selection  
+- Train/validation split  
+- Cross-validation and hyperparameter tuning  
 
-- Feature selection
-- Dataset splitting (training / validation)
-- Cross-validation
-- Hyperparameter tuning
+### Deep Neural Network (DNN)
+Fully connected neural network for learning complex non-linear patterns.
 
+- Input normalization  
+- Train/validation split  
+- Model training and evaluation using ROC and significance metrics  
 ---
 
 ## Evaluation Metrics
@@ -59,13 +59,7 @@ Model performance is evaluated using:
 
 - ROC curves
 - Area Under Curve (AUC)
-- Classification accuracy
+- KS test 
 - Signal significance estimates
-
-Example output includes:
-
-- ROC comparison between BDT and XGBoost
-- Feature importance ranking
-- Confusion matrices
 
 
